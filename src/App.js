@@ -26,24 +26,6 @@ function App() {
   color: #3E3E3E;
 `;
 
-  const Btn = styled.button`
-  margin-top: 23px;
-  margin-bottom: 174px;
-  width: 218px;
-  height: 73px;
-  left: 150px;
-  top: 681px;
-  background: #FAD34F;
-  border: 0px;
-  border-radius: 500px;
-  font-family: 'Apercu Arabic Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
-  color: #FFFFFF;
-  text-align: center;
-`;
 
   // const Map = styled.iframe`
   // border: 0;
@@ -60,7 +42,6 @@ function App() {
         {/* <Title title='Reach out to us!' /> */}
         <Form />
         {/* <Btn btntitle='Send message' /> */}
-        <Btn>Send message</Btn>
       </div>
       {/* <Map>
         <iframe
