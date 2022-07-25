@@ -9,7 +9,14 @@ import { ReactComponent as SmileOrangee } from "../../images/smiles/5.svg";
 
 const Footer = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        height: "200px",
+        background: "#FAFAFA",
+        border: "1px solid #D8D8D8",
+      }}
+    >
       <Smile width="214px" height="208px" />
       <In />
       <Facebook />

@@ -1,0 +1,27 @@
+.input {
+    box-sizing: border-box;
+    width: 557px;
+    height: 93px;
+    left: 150px;
+    top: 267px;
+    padding-left: 46px;
+    margin-bottom: 8px;
+
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
+
+.inputMessage {
+    box-sizing: border-box;
+    width: 557px;
+    height: 189px;
+    left: 150px;
+    top: 267px;
+    padding-left: 46px;
+    margin-bottom: 8px;
+
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+}
