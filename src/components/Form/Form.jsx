@@ -3,20 +3,15 @@ import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { sendFeedback } from '../../redux/feedbackOperations';
 import s from './Form.module.css';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 // import { Notify } from 'notiflix';
 
 const Form = () => {
   const dispatch = useDispatch();
 
-  const {
-    register,
-    handleSubmit,
-    // formState,
-    reset,
-  } = useForm();
+  const { register, handleSubmit, formState, reset } = useForm();
 
-  // const { errors } = formState;
+  const { errors } = formState;
 
   const nameValidation = {
     required: 'validation.required',
@@ -54,24 +49,24 @@ const Form = () => {
     },
   };
 
-  const Btn = styled.button`
-    margin-top: 23px;
-    margin-bottom: 174px;
-    width: 218px;
-    height: 73px;
-    left: 150px;
-    top: 681px;
-    background: #fad34f;
-    border: 0px;
-    border-radius: 500px;
-    font-family: 'Apercu Arabic Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    color: #ffffff;
-    text-align: center;
-  `;
+  // const Btn = styled.button`
+  //   margin-top: 23px;
+  //   margin-bottom: 174px;
+  //   width: 218px;
+  //   height: 73px;
+  //   left: 150px;
+  //   top: 681px;
+  //   background: #fad34f;
+  //   border: 0px;
+  //   border-radius: 500px;
+  //   font-family: 'Apercu Arabic Pro';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 18px;
+  //   line-height: 18px;
+  //   color: #ffffff;
+  //   text-align: center;
+  // `;
 
   const onSubmit = feedback => {
     dispatch(sendFeedback(feedback));
@@ -91,6 +86,7 @@ const Form = () => {
             className={s.input}
           />
         </label>
+        {errors}
         {/* {errors && Notify.error(`Ваш відгук НЕ відправлено`)} */}
       </div>
       <div>
@@ -103,6 +99,7 @@ const Form = () => {
             className={s.input}
           />
         </label>
+        {errors}
         {/* {errors && Notify.error(`Ваш відгук НЕ відправлено`)} */}
       </div>
       <div>
@@ -115,9 +112,12 @@ const Form = () => {
             className={s.inputMessage}
           />
         </label>
+        {errors}
         {/* {errors && Notify.error('Ваш відгук НЕ відправлено')} */}
       </div>
-      <Btn type="submit">Send message</Btn>
+      <button type="submit" className="btn">
+        Send message
+      </button>
     </form>
   );
 };
