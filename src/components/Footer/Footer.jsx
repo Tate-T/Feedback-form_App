@@ -6,7 +6,6 @@ import { ReactComponent as Twitter } from '../../images/socials/tw.svg';
 import { ReactComponent as Addition } from '../../images/socials/q.svg';
 import { ReactComponent as SmileReverse } from '../../images/smiles/4.svg';
 import { ReactComponent as SmileOrangee } from '../../images/smiles/5.svg';
-import s from './Footer.module.css';
 
 const Footer = () => {
   return (
@@ -36,28 +35,29 @@ const Footer = () => {
           marginLeft: '340px',
         }}
       >
-        <a href="https://www.linkedin.com/" className={s.link}>
+        <a href="https://www.linkedin.com/">
           <In
             style={{
               marginLeft: '25px',
+              color: '#696969',
             }}
           />
         </a>
-        <a href="https://www.facebook.com/" className={s.link}>
+        <a href="https://www.facebook.com/">
           <Facebook
             style={{
               marginLeft: '25px',
             }}
           />
         </a>
-        <a href="https://www.twitter.com/" className={s.link}>
+        <a href="https://www.twitter.com/">
           <Twitter
             style={{
               marginLeft: '25px',
             }}
           />
         </a>
-        <a href="https://www.google.com/" className={s.link}>
+        <a href="https://www.google.com/">
           <Addition
             style={{
               marginLeft: '25px',
