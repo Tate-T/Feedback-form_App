@@ -11,6 +11,7 @@ const Footer = () => {
   return (
     <div
       style={{
+        marginTop: "100px",
         display: "flex",
         height: "200px",
         background: "#FAFAFA",
@@ -22,7 +23,7 @@ const Footer = () => {
         height="300px"
         style={{
           position: "absolute",
-          top: "180%",
+          top: "195%",
         }}
       />
       <div
@@ -67,7 +68,7 @@ const Footer = () => {
         style={{
           position: "absolute",
           left: "94%",
-          top: "200%",
+          top: "210%",
         }}
       />
     </div>
