@@ -37,6 +37,8 @@ const Footer = () => {
       >
         <a href="https://www.linkedin.com/">
           <In
+            width="15px"
+            height="15px"
             style={{
               marginLeft: '25px',
               color: '#696969',
@@ -45,6 +47,8 @@ const Footer = () => {
         </a>
         <a href="https://www.facebook.com/">
           <Facebook
+            width="15px"
+            height="15px"
             style={{
               marginLeft: '25px',
             }}
@@ -52,6 +56,8 @@ const Footer = () => {
         </a>
         <a href="https://www.twitter.com/">
           <Twitter
+            width="15px"
+            height="15px"
             style={{
               marginLeft: '25px',
             }}
@@ -59,6 +65,8 @@ const Footer = () => {
         </a>
         <a href="https://www.google.com/">
           <Addition
+            width="15px"
+            height="15px"
             style={{
               marginLeft: '25px',
             }}
