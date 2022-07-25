@@ -8,6 +8,8 @@ import { ReactComponent as SmileOrangee } from "./images/smiles/1.svg";
 import { ReactComponent as SmileOrange } from "./images/smiles/2.svg";
 import { ReactComponent as Smile } from "./images/smiles/3.svg";
 import { ReactComponent as MapImage } from "./images/map.svg";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import styled from 'styled-components';
 
@@ -67,6 +69,16 @@ function App() {
         left: "60%"
       }} />
       <Footer />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover />
     </Container>
   );
 }
