@@ -24,6 +24,7 @@ function App() {
 
   const Btn = styled.button`
   margin-top: 23px;
+  margin-bottom: 174px;
   width: 218px;
   height: 73px;
   left: 150px;
@@ -51,8 +52,16 @@ function App() {
         <Btn>Send message</Btn>
       </div>
       <Map />
-      <SmileOrange width="88.32px" height="85.84px" />
-      <Smile width="214px" height="208px" />
+      <Smile width="214px" height="208px" style={{
+        position: "absolute",
+        top: "105%",
+        left: "60%"
+      }} />
+      <SmileOrange width="88.32px" height="85.84px" style={{
+        position: "absolute",
+        top: "100%",
+        left: "60%"
+      }} />
       <Footer />
     </Container>
   );

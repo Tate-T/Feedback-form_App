@@ -17,13 +17,59 @@ const Footer = () => {
         border: "1px solid #D8D8D8",
       }}
     >
-      <Smile width="214px" height="208px" />
-      <In />
-      <Facebook />
-      <Twitter />
-      <Addition />
-      <SmileReverse width="78.46px" height="97px" />
-      <SmileOrangee width="88.32px" height="85.84px" />
+      <Smile
+        width="300px"
+        height="300px"
+        style={{
+          position: "absolute",
+          top: "180%",
+        }}
+      />
+      <div
+        style={{
+          marginRight: "50px",
+          marginTop: "79px",
+          marginLeft: "340px",
+        }}
+      >
+        <In
+          style={{
+            marginLeft: "25px",
+          }}
+        />
+        <Facebook
+          style={{
+            marginLeft: "25px",
+          }}
+        />
+        <Twitter
+          style={{
+            marginLeft: "25px",
+          }}
+        />
+        <Addition
+          style={{
+            marginLeft: "25px",
+          }}
+        />
+      </div>
+      <SmileReverse
+        width="78.46px"
+        height="97px"
+        style={{
+          marginRight: "128px",
+          marginLeft: "auto",
+        }}
+      />
+      <SmileOrangee
+        width="88.32px"
+        height="85.84px"
+        style={{
+          position: "absolute",
+          left: "94%",
+          top: "200%",
+        }}
+      />
     </div>
   );
 };
