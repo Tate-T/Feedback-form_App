@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
-import { addFeedback } from '../../redux/feedbackOperations';
+import { sendFeedback } from '../../redux/feedbackOperations';
 import s from './Form.module.css';
 import styled from 'styled-components';
 
@@ -68,7 +68,7 @@ const Form = () => {
   `;
 
   const onSubmit = feedback => {
-    dispatch(addFeedback(feedback));
+    dispatch(sendFeedback(feedback));
 
     reset();
   };
