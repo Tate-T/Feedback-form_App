@@ -4,13 +4,19 @@ import { useForm } from 'react-hook-form';
 import { sendFeedback } from '../../redux/feedbackOperations';
 import s from './Form.module.css';
 import styled from 'styled-components';
+// import { Notify } from 'notiflix';
 
 const Form = () => {
   const dispatch = useDispatch();
 
-  const { register, handleSubmit, formState, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    // formState,
+    reset,
+  } = useForm();
 
-  const { errors } = formState;
+  // const { errors } = formState;
 
   const nameValidation = {
     required: 'validation.required',
@@ -85,7 +91,7 @@ const Form = () => {
             className={s.input}
           />
         </label>
-        {errors && <p>{'Something went wrong'}</p>}
+        {/* {errors && Notify.error(`Ваш відгук НЕ відправлено`)} */}
       </div>
       <div>
         <label>
@@ -97,7 +103,7 @@ const Form = () => {
             className={s.input}
           />
         </label>
-        {errors && <p>{'Something went wrong'}</p>}
+        {/* {errors && Notify.error(`Ваш відгук НЕ відправлено`)} */}
       </div>
       <div>
         <label>
@@ -109,7 +115,7 @@ const Form = () => {
             className={s.inputMessage}
           />
         </label>
-        {errors && <p>{'Something went wrong'}</p>}
+        {/* {errors && Notify.error('Ваш відгук НЕ відправлено')} */}
       </div>
       <Btn type="submit">Send message</Btn>
     </form>
