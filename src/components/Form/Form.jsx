@@ -86,7 +86,7 @@ const Form = () => {
             className={s.input}
           />
         </label>
-        {errors}
+        {/* {errors} */}
         {/* {errors && Notify.error(`Ваш відгук НЕ відправлено`)} */}
       </div>
       <div>
@@ -99,7 +99,7 @@ const Form = () => {
             className={s.input}
           />
         </label>
-        {errors}
+        {/* {errors} */}
         {/* {errors && Notify.error(`Ваш відгук НЕ відправлено`)} */}
       </div>
       <div>
@@ -112,10 +112,10 @@ const Form = () => {
             className={s.inputMessage}
           />
         </label>
-        {errors}
+        {/* {errors} */}
         {/* {errors && Notify.error('Ваш відгук НЕ відправлено')} */}
       </div>
-      <button type="submit" className="btn">
+      <button type="submit" className={s.btn}>
         Send message
       </button>
     </form>
