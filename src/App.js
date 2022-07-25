@@ -66,12 +66,12 @@ function App() {
         }} />
         <Smile width="214px" height="208px" style={{
           position: "absolute",
-          top: "105%",
+          top: "45%",
           left: "60%"
         }} />
         <SmileOrange width="88.32px" height="85.84px" style={{
           position: "absolute",
-          top: "100%",
+          top: "45%",
           left: "60%"
         }} />
         <Footer />
