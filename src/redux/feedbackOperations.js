@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { addNewFeedbackApi } from '../utils/feedbackApi';
 
-export const sendFeedback = createAsyncThunk('feedback/add', async (feedback, thunkApi) => {
+const sendFeedback = createAsyncThunk('feedback/add', async (feedback, thunkApi) => {
     try {
         const addedFeedback = await addNewFeedbackApi(feedback);
         toast.success("Ваш відгук відправлено", {
@@ -19,3 +19,5 @@ export const sendFeedback = createAsyncThunk('feedback/add', async (feedback, th
         return thunkApi.rejectWithValue(toast.error("Ваш відгук НЕ відправлено"));
     }
 });
+
+export default sendFeedback;

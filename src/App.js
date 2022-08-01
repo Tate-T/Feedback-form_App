@@ -1,3 +1,4 @@
+import React from 'react';
 // import Container from './components/Container/Container.jsx';
 // import Title from './components/Title/Title.jsx';
 // import Btn from './components/Btn/Btn.jsx';

@@ -1,7 +1,7 @@
 import { addNewFeedbackApi } from "../../utils/feedbackApi";
 import { addFeedbackRequest, addFeedbackSuccess, addFeedbackError } from './transactions-actions';
 
-import { toast } from 'react-toastify';
+import toast from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const addFeedback = (feedback) => {
