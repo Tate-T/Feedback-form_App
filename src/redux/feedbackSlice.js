@@ -3,7 +3,9 @@ import { sendFeedback } from './feedbackOperations';
 
 const initialState = {
     feedbacks: {
-
+        name: '',
+        email: '',
+        message: ''
     },
     isLoading: false,
     error: null,
